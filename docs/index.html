@@ -22,7 +22,7 @@
             max-width: 1200px;
             margin: auto;
             width: 80%;
-            border: 7px dotted rgb(50, 81, 89);
+            border: 7px solid rgb(50, 81, 89);
             padding: 10px;
         }
         .container {
@@ -366,14 +366,14 @@
     <p style="font-size: 20px;font-family:verdana;">We found that countries with sturdier and more ambitious environmental policy (estimated with SGI scores from 1 to 10) tended to be the same countries that had the highest overall Trilemma scores from 2000 to the projected 2030 scores. The average SGI score for this cluster was 6.22. This indicates that these countries have relatively high amounts of environmental policy that take more action to protect and promote the environment. This is likely a primary factor in the consistently high scores that these countries have. These countries started off early and strong in adoption of sustainable solutions compared to the rest of the world and maintained high scores through the decades that our team assessed. This cluster also saw a very high concentration of countries with largely Christian populations; around 68% of the combined population of these countries is Christian. Overall, around 82% of these countries' populations had some religious affiliation. This gives us reason to believe that countries with strong religious backgrounds were some of the first to adopt sustainable solutions and also have high awareness and concern for environmental preservation. Additionally, as seen below, there seems to be a direct correlation between GDP of a country and how sustainable the country is; there is an extremely large gap in GDP between countries clustered into the largest trilemma scores versus countries in any other group. Most of the countries in this cluster are in Europe, with some presence in South America, Asia, Oceania, and North America.</p>
      <div class="container">
          <figure>
-            <img src='https://github.gatech.edu/raw/nhoque3/ML-team-21/master/pics/gdp_chart.png?token=AAAJBX2QZHKG5ASYLJAML7C726B7K' alt = "GDP" width="500">
+            <img src='https://raw.githubusercontent.com/nyimulhoque/ML-climate-change-analysis/master/docs/pics/gdp_chart.png' alt = "GDP" width="500">
          <figcaption> This graph summed the GDP per capita of every country for every cluster to compare the economics of the clusters </figcaption>    
          </figure>
     </div>
     <p style="font-size: 20px;font-family:verdana;">For the cluster containing countries with middle of the road Trilemma indices, there was a slightly lower religious affiliation, with 20% unaffiliated population.This cluster had a fairly even distribution of varying religious presences, with Hinduism reaching the highest percentage of the combined population at around 27%. This cluster sees more variance in belief systems, which may cause some discontinuity in cultural importances among the populations. From the three available SGI data points, the average SGI score for this cluster was 4.33. This shows that these countries place lesser emphasis on environmental governance, but still have some policies helping them on their way to future improvement. As shown in the below bar graph, the highest percentage of countries from this cluster are in Asia, but also appear on all other continents, excluding Oceania.</p>
         <div id="container">
             <figure>
-                <img src='https://github.gatech.edu/raw/nhoque3/ML-team-21/master/pics/continents.png?token=AAAJBX2QW3HSXT3K7RPB36C726BRS' alt = "continents"  width="1000">
+                <img src='https://raw.githubusercontent.com/nyimulhoque/ML-climate-change-analysis/master/docs/pics/continents.png' alt = "continents"  width="1000">
             <figcaption> This graph shows the percentage of each cluster belonging to different continents</figcaption>
             </figure>
         </div>
@@ -381,7 +381,7 @@
     <p style="font-size: 20px;font-family:verdana;">The cluster containing countries with the lowest Trilemma indices actually has the largest combined religious population, with almost 98% of people identifying with one religious belief or another. Shown in the graph below, around 55% of the population identifies as Muslim, and another 32% identifies as Christian. This does not follow our expectation of correlation between sustainable presence and religious presence, but might be explained with unique cultural tendencies that come along with these religions. From the data we have, however, this trend cannot be explained. None of the countries in this last cluster had data to report for SGI, so we could not analyze them according to their governing policies, but it may be reasonable to conclude that these countries do not have significant policies to report. A large majority of these countries are in Africa, and the rest are in Asia.</p>
     <div id="container">
         <figure>
-            <img src='https://github.gatech.edu/raw/nhoque3/ML-team-21/master/pics/religion.png?token=AAAJBX4WU3AFOAA7WMGYLJK726CHM' alt = "religion" width="1000">
+            <img src='https://raw.githubusercontent.com/nyimulhoque/ML-climate-change-analysis/master/docs/pics/religion.png' alt = "religion" width="1000">
             <figcaption> This graph shows the religious breakdown of each cluster </figcaption>
         </figure>
     </div>
@@ -392,7 +392,7 @@
     <p style="font-size: 20px;font-family:verdana;">Random Forest Results:</p>
     
 
-    <img id="randomforest" src="https://github.gatech.edu/raw/nhoque3/ML-team-21/master/docs/pics/randomforestresults.png?token=AAAJBX5WDWDWEJGNFQTV57K726DGQ" alt ="Random forest results" style="width:500px;height:200px;display:block;margin-left: auto;margin-right: auto;width: 50%;">
+    <img id="randomforest" src="https://raw.githubusercontent.com/nyimulhoque/ML-climate-change-analysis/master/docs/pics/randomforestresults.png" alt ="Random forest results" style="width:500px;height:200px;display:block;margin-left: auto;margin-right: auto;width: 50%;">
     <p style="font-size: 20px;font-family:verdana;">An important component of our problem statement was to identify countries with promising strides in their sustainability scores. Our initial clustering method was crucial in identifying what we predict to be the top countries in sustainability development in 2030. In addition to the classification through decision trees and random forests, we clustered through KMeans again by initial 2020 score and historic rate of growth to see how fast countries are progressing. This provided a new insight as we were able to examine each country more objectively, removing the bias of a head start where a country with ample resources might have higher scores in 2020 in the first place.  </p>
     <p style="font-size: 20px;font-family:verdana;">The results of the two clustering mechanisms can be visualized with the interactive maps below. The maps are color coded so that countries are in their respective clusters that were mentioned above.  You can hover over the map to see which cluster a country is in and click on that cluster to view any country in that cluster. Try to look for similarities between the maps, which we will reveal in the next paragraph.</p>
 
